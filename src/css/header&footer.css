@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Chakra+Petch|Noto+Sans+KR&display=swap');
+
+
+*{
+    font-family: 'Chakra Petch', 'Noto Sans KR', sans-serif;
+    word-break: keep-all;
+}
+a, p, div{
+    font-family: 'Chakra Petch', 'Noto Sans KR', sans-serif;
+    word-break: keep-all;
+}
+
+/*-----------------------------------------------header-------------------------*/
+
+header div.logo{
+    width: 100px;
+    height: 50px;
+    top: 30px;
+    left: 50px;
+    position: fixed;
+    z-index: 999999;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header div.logo img{
+    height: 50px;
+}
+.logo_img1{
+    display: none;
+}
+header div.nav_btn{
+    width: 100px; height: 50px;
+    top: 30px;
+    position: fixed;
+    right: 50px;
+    z-index: 999999;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+header div.nav_btn div.nav_btn_line{
+    width: 50%; height: 5px;
+    background-color: #ffb317;
+    margin-top: 10px;
+    transition-duration: 0.3s;
+}
+header div.nav_btn div.nav_btn_line:first-child{
+    margin-top: 0;
+}
+header div.nav_btn:hover div.nav_btn_line{
+    background-color: #fff;
+}
+/*---------------------------nav*/
+div.nav{
+    width: 100%; height: 100vh;
+    background-color: rgb(0,0,0,0.5);
+    position: absolute;
+    top: 0; right: -100%;
+    position: fixed;
+    z-index: 999999;
+}
+div.nav div.nav_con{
+    width: 50%; height: 100vh;
+    background-color: white;
+    float: right;
+    position: relative;
+}
+div.nav div.nav_con div.nav_close{
+    width: 50px; height: 100px;
+    padding: 30px 0;
+    box-sizing: border-box;
+    float: right;
+    margin-right: 50px;
+}
+div.nav div.nav_con div.nav_close div.nav_close_line1{
+    width: 100%; height: 5px;
+    background-color: #35268f;
+    transform: rotate(45deg);
+    margin-top: 20px;
+    transition-duration: 0.3s;
+}
+div.nav div.nav_con div.nav_close div.nav_close_line2{
+    width: 100%; height: 5px;
+    background-color: #35268f;
+    transform: rotate(135deg);
+    margin-top: -5px;
+    transition-duration: 0.3s;
+}
+div.nav div.nav_con div.nav_close:hover div.nav_close_line1,
+div.nav div.nav_con div.nav_close:hover div.nav_close_line2{
+    background-color: #ffb317;
+}
+div.nav div.nav_con nav{
+    margin-top: 100px;
+}
+div.nav div.nav_con nav ul li.gnb{
+    width: 100%;
+}
+div.nav div.nav_con nav ul li.gnb p{
+    width: 100%; height: 70px;
+    line-height: 70px;
+    font-size: 30px;
+    font-weight:bold;
+    text-indent: 20px;
+    cursor: pointer;
+}
+div.nav div.nav_con nav ul li.gnb a{
+    display: inline-block;
+    color: black;
+}
+div.nav div.nav_con nav ul li div.lnb{
+    display: none;
+}
+div.nav div.nav_con nav ul li div.lnb ul li{
+    width: 100%; height: 50px;
+    line-height: 50px;
+    text-indent: 40px;
+    background-color: #ffb317;
+}
+div.nav div.nav_con nav ul li div.lnb ul li a{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+div.nav div.nav_con nav ul li div.lnb ul li a.gnb_link{
+    animation-name: gnb_link;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes gnb_link{
+    0%{
+        color: black;
+    }
+    50%{
+        color: #35268f;
+    }
+    100%{
+        color: black;
+    }
+}
+div.container{
+    width: 200px; height: 42px;
+    padding: 0 10px;
+    border: 2px solid black;
+    box-sizing: border-box;
+    float: right;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    line-height: 38px;
+    cursor: pointer;
+    position: relative;
+}
+div.nav_con div.container{
+    position: absolute;
+    right: 50px; bottom: 50px;
+}
+div.container:hover div.container_filter{
+    color: #35268f;
+}
+div.container_filter{
+    width: 22px; height: 22px;
+    float: right;
+    color: black;
+    margin: 8px 0;
+    text-align: center;
+    line-height: 22px;
+    font-weight: bold;
+    font-size: 20px;
+}
+div.container_con{
+    width: 200px; height: auto;
+    position: absolute;
+    border: 2px solid black;
+    box-sizing: border-box;
+    display: none;
+}
+div.nav_con div.container_con{
+    bottom: 38px; left: -2px;
+}
+div.container_con ul li a{
+    width: 196px; height: 30px;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    line-height: 29px;
+    border-bottom: 1px solid black;
+    box-sizing: border-box;
+}
+div.container_con ul li:last-child a{ 
+    border-bottom: none;
+}
+div.container_con ul li a:hover{
+    color: #35268f;
+}
+/*----------------------------------------------footer---------------------------*/
+footer{
+    width: 100%; height: 300px;
+    background-color: #ffb317;
+}
+footer div.footer_top{
+    width: 100%; height: 75px;
+    padding: 16px 50px;
+    box-sizing: border-box;
+}
+footer div.container_con{
+    top: 38px; left: -2px;
+    background-color: #ffb317;
+}
+footer div.footer_bottom{
+    width: 100%; height: 150px;
+    margin-bottom: 75px;
+    text-align: center;
+    padding: 16px 50px;
+    box-sizing: border-box;
+}
+footer div.footer_bottom ul{
+    display: inline-block;
+}
+footer div.footer_bottom ul li{
+    font-size: 16px;
+    float: left;
+}
+footer div.footer_bottom ul li a{
+    font-size: 16px;
+    font-weight: bold;
+    float: left;
+    margin: 0 10px;
+    color: black;
+}
+footer div.footer_bottom p{
+    height: 40px;
+    font-size: 16px;
+    color: #2f2f2f;
+}
+footer div.footer_bottom div.footer_sns{
+    display: inline-block;
+}
+footer div.footer_bottom div.footer_sns a{
+    width: 40px; height: 40px;
+    display: inline-block;
+    margin: 10px 5px;
+}
+footer div.footer_bottom div.footer_sns a img{
+    width: 40px;
+}
+
+
+
+@media screen and (max-width:768px){
+    header div.logo{
+        top: 20px; left: 20px;
+    }
+    header div.nav_btn{
+        top: 20px; right: 20px;
+    }
+    footer div.footer_top,
+    footer div.footer_bottom{
+        padding: 16px 40px;
+    }
+    div.nav div.nav_con {
+        width: 70%;
+    }
+    
+    
+}
+
+@media screen and (max-width:480px){
+    header div.logo{
+        height: 40px;
+        top: 20px; left: 0;
+    }
+    header div.logo img {
+        height: 40px;
+    }
+    header div.nav_btn{
+        height: 40px;
+        top: 20px; right: 0;
+    }
+    header div.nav_btn div.nav_btn_line {
+        width: 45%; height: 4px;
+        margin-top: 7px;
+    }
+    div.nav div.nav_con {
+        width: 85%;
+    }
+    div.nav div.nav_con nav {
+        margin-top: 60px;
+    }
+    div.nav div.nav_con div.nav_close {
+        width: 40px; height: 60px;
+        padding: 20px 0;
+        margin-right: 20px;
+    }
+    div.nav div.nav_con nav ul li.gnb p {
+        height: 50px;
+        font-size: 20px;
+    }
+    div.nav div.nav_con nav ul li div.lnb ul li{
+        height: 40px;
+    }
+    div.nav div.nav_con nav ul li div.lnb ul li a{
+        font-size: 16px;
+    }
+    div.nav_con div.container {
+        right: 20px; bottom: 40px;
+    }
+    
+    
+    footer div.footer_top{
+        padding: 16px 20px;
+        padding-top: 30px;
+    }
+    footer div.footer_bottom {
+        padding: 16px 20px;
+    }
+    footer div.footer_bottom ul li{
+        font-size: 12px;
+    }
+    footer div.footer_bottom ul li a {
+        font-size: 12px;
+        margin: 0 5px;
+    }
+    footer div.footer_bottom p {
+        font-size: 12px;
+    }
+    
+    div.container {
+        width: 150px;
+        height: 35px;
+        font-size: 14px;
+        line-height: 31px;
+    }
+    div.container_filter {
+        width: 18px; height: 18px;
+        line-height: 14px;
+        font-size: 16px;
+    }
+    div.container_con {
+        width: 150px;
+    }
+    div.container_con ul li a {
+        width: 146px;
+        font-size: 12px;
+    }
+    footer div.container_con {
+        top: 31px;
+    }
+    div.nav_con div.container_con {
+        bottom: 31px;
+    }
+}

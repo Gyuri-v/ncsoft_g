@@ -1,0 +1,433 @@
+/*************공통**************/
+*{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+
+div.subtitle{
+    width: 274px; height: 100px;
+    margin: 0 auto;
+    margin-top: 50px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 100px;
+    font-weight: bold;
+    position: relative;
+}
+div.subtitle::after{
+    content: '';
+    display: block;
+    width: 100%; height: 5px;
+    position: absolute;
+    bottom: 20px;
+    background-color: #35268f;
+}
+
+/*************카테고리**************/
+
+section.category{
+    width: 100%; height: 400px;
+    background-image: url(../img/company1.png);
+    margin: 0 auto;
+    text-align: center;
+    line-height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section.category span{
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    
+}
+div.maintitle{
+    width: 274px; height: 100px;
+    margin: 0 auto;
+    margin-top: 100px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 100px;
+    font-weight: bold;
+    position:relative; 
+}
+div.maintitle::after{
+    content: '';
+    display: block;
+    width: 100%; height: 5px;
+    position: absolute;
+    bottom: 20px;
+    background-color: #35268f;
+    animation-name: subtitle;
+    animation-duration: 1s;
+}
+@keyframes subtitle{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
+/*************컴퍼니**************/
+
+section.company{
+    width: 1196px; height: 400px;
+    margin: 0 auto;
+}
+section.company article.company1{
+    width: 100%; height: 300px;
+    padding: 50px 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+section.company div.company_text{
+    width: 100%; height: 200px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+section.company div.company_text span{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+
+/*************CEO메세지**************/
+
+
+section.ceo{
+    width: 1196px; height: 650px;
+    margin: 0 auto;
+}
+
+section.ceo article.ceo1{
+    width: 100%; height: 550px;
+    padding: 50px 20px;
+    box-sizing: border-box;
+}
+section.ceo article.ceo1 img{
+    width: 40%; height: auto;
+}
+section.ceo article.ceo1 div.ceo_text{
+    width: 60%; height: 450px;
+    float: right;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+section.ceo article.ceo1 div.ceo_text span{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/*************히스토리**************/
+section.history{
+    width: 1196px; height: 1200px;
+    margin: 0 auto;
+}
+section.history ul.history1{
+    width: 100%; height: 1100px;
+    padding: 50px 20px;
+    box-sizing: border-box;
+}
+section.history ul.history1 span{
+    font-weight: bold;
+    color: #35268f;
+}
+section.history ul.history1 i{
+    color: #ffb317;
+}
+section.history ul.history1 li.hisleft{
+    width: 49%; height: 1000px;
+    float: left;
+}
+section.history ul.history1 li.hisleft div.left{
+    width: 100%; height: 100px;
+}
+section.history ul.history1 li.hisleft div.left2{
+    text-align: right;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+section.history ul.history1 li.hisleft div.left4{
+    text-align: right;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+section.history ul.history1 li.hisleft div.left6{
+    text-align: right;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+section.history ul.history1 li.hisleft div.left8{
+    text-align: right;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+section.history ul.history1 li.hisleft div.left10{
+    text-align: right;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+section.history ul.history1 li.line{
+    width: 2%; height: 1000px;
+    background-color: #35268f;
+    float: left;
+}
+section.history ul.history1 li.line div.circle{
+    width: 20px; height: 20px;
+    border-radius: 50px;
+    background-color: #ffb317;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+section.history ul.history1 li.hisright{
+    width: 49%; height: 1000px;
+    float: left;
+}
+section.history ul.history1 li.hisright div.right{
+    width: 100%; height: 100px;
+   
+}
+section.history ul.history1 li.hisright div.right1{
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+section.history ul.history1 li.hisright div.right3{
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+section.history ul.history1 li.hisright div.right5{
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+section.history ul.history1 li.hisright div.right7{
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+section.history ul.history1 li.hisright div.right9{
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*************컬쳐**************/
+section.culture{
+    width: 1196px; height: 969px;
+    margin: 0 auto;
+}
+section.culture article.culture1{
+    width: 100%; height: 869px;
+    padding: 50px 70px;
+    box-sizing: border-box;
+}
+section.culture article.culture1 span{
+    font-weight: bold;
+}
+section.culture article.culture1 div{
+    width: 46%; height: 360px;
+    background-color: #ffb317;
+    margin: 0 2%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+section.culture article.culture1 div.left{
+    float: left;
+}
+section.culture article.culture1 div.right{
+    float: right;
+}
+section.culture article.culture1 div.top{
+    margin-bottom: 50px;
+}
+section.culture article.culture1 div span{
+    font-size: 20px;
+    border-bottom: 5px solid #35268f;
+    box-sizing: border-box;
+}
+section.culture article.culture1 div i{
+    font-weight: bold;
+}
+section.culture article.culture1 div p{
+    margin: 20px;
+}
+/*************지도위치**************/
+section.location{
+    width: 1196px; height: 1000px;
+    margin: 0 auto;
+}
+section.location article.location1{
+    width: 100%x; height: 550px;
+    margin: 50px 10px;
+    border: 3px solid #eaeaea;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+@media screen and (max-width:1200px){
+    section.company,
+    section.ceo,
+    section.history,
+    section.culture,
+    section.location{
+        width: 100%
+    }
+    section.culture{
+        height: 1200px;
+    }
+    section.culture article.culture1 div {
+        height: 420px;
+    }
+}
+
+
+@media screen and (max-width:768px){
+    section.category span {
+        font-size: 30px;
+    }
+    div.maintitle {
+        widows: 200px;
+        font-size: 20px;
+    }
+    div.subtitle {
+        width: 150px;
+        font-size: 16px;
+    }
+    section.ceo{
+        height: 1100px;
+    }
+    section.ceo article.ceo1 img{
+        width: 60%; height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+    section.ceo article.ceo1 div.ceo_text{
+        width: 100%; 
+        text-align: center;
+        padding: 20px;
+        font-size: 14px;
+    }
+    section.history ul li div{
+        font-size: 14px;
+    }
+    section.history ul.history1 li.line div.circle{
+        width: 10px; height: 10px;
+        margin-bottom: 91px;
+    }
+    section.culture{
+        height: 1200px;
+    }
+    section.culture article.culture1 {
+        width: 100%;
+        height: 869px;
+        padding: 50px 10px;
+        box-sizing: border-box;
+    }
+    section.culture article.culture1 div span {
+        font-size: 16px;
+    }
+    section.culture article.culture1 div p {
+        font-size: 14px;
+        margin: 20px 0;
+    }
+    
+}
+
+
+@media screen and (max-width:480px){
+    section.company {
+        height: 600px;
+    }
+    section.company article.company1 {
+        height: 500px;
+    }
+    section.history ul.history1 li.line div.circle{
+        margin-left: -1px;
+    }
+    
+    section.ceo {
+        height: 900px;
+    }
+    
+    
+    section.culture {
+        height: 1700px;
+    }
+    section.culture article.culture1 div.top {
+        margin-bottom: 10px;
+    }
+    section.culture article.culture1 div {
+        width: 100%; height: 360px;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    
+    
+}
+
+
+
